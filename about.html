@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<!-- ▬ TOP BAR ▬ -->
+<div class="top-bar">
+    <div class="top-left">
+        <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+        <a href="404.html"><i class="fab fa-twitter"></i></a>
+        <a href="404.html"><i class="fab fa-pinterest-p"></i></a>
+        <a href="404.html"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="top-right">
+        <span><i class="fas fa-location-dot"></i> Salem, Tamilnadu, India.</span>
+        <span><i class="fas fa-envelope"></i> needhelp@company.com</span>
+    </div>
+</div>
+
+<header class="header">
+
+    <div class="header-red">
+
+        <!-- LOGO -->
+        <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+
+        <!-- TOGGLE BUTTON -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    </div>
+
+   <nav id="mobileNav">
+    <ul>
+
+        <!-- HOME DROPDOWN -->
+      <li class="dropdown">
+
+    <div class="dropdown-header">
+        <a href="index.html" class="home-main">Home</a>
+
+        <span class="dropdown-toggle">
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+    </div>
+
+    <ul class="dropdown-menu">
+        <li><a href="saas.html">Home 2</a></li>
+    </ul>
+
+</li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donations</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+    <!-- BLACK BUTTON -->
+    <a href="login.html" class="header-black-btn">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Create Account</span>
+    </a>
+
+</header>
+
+
+<section class="page-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content scroll-rotate">
+        <h1>About Us</h1>
+
+        <div class="breadcrumb scroll-rotate">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span class="active">About Us</span>
+        </div>
+    </div>
+
+    <!-- OPTIONAL DECORATIVE DOTS -->
+    <div class="dot-small"></div>
+    <div class="dot-big"></div>
+</section>
+
+
+<section class="about-purpose-section">
+
+    <div class="purpose-left">
+        
+        <div class="purpose-tag scroll-rotate">
+            <span>About Us</span>
+        </div>
+
+        <h2 class="purpose-title scroll-rotate">
+            Purpose of this project is <br>
+            to Assist the poor
+        </h2>
+
+        <p class="purpose-text scroll-rotate">
+            We work to support children, families, and communities who struggle with daily needs. Our goal is to provide food, education, and care to those who need it the most. We believe that even a small act of kindness can bring hope and change someone’s life.
+        </p>
+
+        <!-- TOP TWO BOXES -->
+        <div class="purpose-box-row">
+            <div class="purpose-box scroll-rotate">
+                <div class="p-icon"><i class="ri-user-smile-fill"></i></div>
+                <h4>Children<br> Education</h4>
+            </div>
+
+            <div class="purpose-box scroll-rotate">
+                <div class="p-icon"><i class="ri-team-fill"></i></div>
+                <h4>Join Our<br> Team</h4>
+            </div>
+        </div>
+
+        <!-- Bullet Points -->
+        <ul class="purpose-list scroll-rotate">
+            <li><i class="ri-checkbox-circle-fill"></i> Feeding Hungry People</li>
+            <li><i class="ri-checkbox-circle-fill"></i> Education, Charitable, Sports</li>
+        </ul>
+
+        <a href="404.html" class="discover-btn scroll-rotate">Discover More</a>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="purpose-right scroll-rotate">
+
+        <!-- Vertical Lines -->
+        <div class="vertical-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- IMAGE GROUP -->
+        <div class="img-top">
+            <img src="img/about1.webp" alt="">
+        </div>
+
+        <div class="img-bottom">
+            <img src="img/about2.webp" alt="">
+        </div>
+
+        <!-- Decorative Icon Circle -->
+        <div class="decor-circle">
+            <img src="img/charity.webp" alt="">
+        </div>
+    </div>
+
+</section>
+
+<section class="video-hero">
+
+    <!-- LEFT CONTENT -->
+    <div class="vh-left scroll-rotate">
+        <img src="img/arc-shape.webp" class="vh-arc">
+
+        <span class="vh-tag">
+            Video Here To Support
+        </span>
+
+        <h2>We Help Poor This <br> Life’s Service</h2>
+
+        <p>
+            Build strong support and stability. Live with balance and grow over time.
+Always move forward with confidence.
+        </p>
+
+        <a href="404.html" class="vh-btn">Discover More</a>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="vh-right scroll-rotate">
+        <img src="img/hero-bg.webp" class="vh-img">
+
+        <!-- red paint brush edges -->
+        <img src="img/paint1.webp" class="paint-edge">
+
+        <!-- play button -->
+        <a href="404.html" class="play-btn" target="_blank">
+    <i class="fa-solid fa-play"></i>
+</a>
+
+    </div>
+
+</section>
+
+
+<!-- SECTION 1 : TOP COUNTERS -->
+<section class="section-top">
+    <div class="counter-wrapper">
+
+        <div class="counter-box scroll-rotate">
+            <i class="ri-user-star-line"></i>
+            <h2>26K</h2>
+            <p>Team Support</p>
+        </div>
+
+        <div class="counter-box scroll-rotate">
+            <i class="ri-hand-heart-line"></i>
+            <h2>360K</h2>
+            <p>Total Donation</p>
+        </div>
+
+        <div class="counter-box scroll-rotate">
+            <i class="ri-hand-coin-line"></i>
+            <h2>80M</h2>
+            <p>Clients Help</p>
+        </div>
+
+        <div class="counter-box scroll-rotate">
+            <i class="ri-book-2-line"></i>
+            <h2>320K</h2>
+            <p>Poor Educate</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SECTION 2 : MIDDLE DARK BACKGROUND -->
+<section class="section-middle"></section>
+
+
+<!-- SECTION 3 : VOLUNTEER CARDS -->
+<section class="section-bottom">
+    <div class="volunteer-card scroll-rotate">
+        <div class="red-curve"></div>
+        <div class="v-content">
+            <h3>Become Volunteer</h3>
+            <p>Build a better future with your support and dedication.</p>
+            <a href="404.html">
+    <button>Discover More</button>
+</a>
+        </div>
+    </div>
+
+    <div class="volunteer-card scroll-rotate">
+        <div class="red-curve"></div>
+        <div class="v-content">
+            <h3>Join Us Volunteer</h3>
+            <p>Commitment to the cause both the angel on my left shoulder.</p>
+            <a href="404.html">
+    <button>Discover More</button>
+</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col about scroll-rotate">
+            <div class="footer-logo">
+                <img src="img/logo1.webp" alt="">
+            </div>
+
+            <p>There are many variations of passages of Lorem Ip available, but the majority have.</p>
+
+          <div class="subscribe-box scroll-rotate">
+    <input type="email" id="emailInput" placeholder="Email Address">
+    <button id="subscribeBtn"><i class="ri-send-plane-2-fill"></i></button>
+</div>
+
+<p id="emailError" style="color:red; font-size:13px; margin-top:5px; display:none;"></p>
+
+            <div class="social-icons scroll-rotate">
+                <a href="404.html"><i class="ri-facebook-fill"></i></a>
+                <a href="404.html"><i class="ri-twitter-fill"></i></a>
+                <a href="404.html"><i class="ri-pinterest-fill"></i></a>
+                <a href="404.html"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col scroll-rotate">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col scroll-rotate">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="404.html">Campaigns</a></li>
+                <li><a href="404.html">Fundraise</a></li>
+                <li><a href="404.html">Online Service</a></li>
+                <li><a href="404.html">Volunteers</a></li>
+                <li><a href="404.html">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col contact">
+
+            <div class="contact-box scroll-rotate">
+                <div class="arrow"></div>
+                <i class="ri-phone-fill phone-icon"></i>
+                <div>
+                    <h4>+91 1234567890</h4>
+                    <h4>+91 0987654321</h4>
+                </div>
+            </div>
+
+            <div class="contact-item scroll-rotate">
+                <i class="ri-earth-fill"></i>
+                <div>
+                    <p>support@example.com</p>
+                    <p>www.website.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item scroll-rotate">
+                <i class="ri-map-pin-fill"></i>
+                <div>
+                    <p>Salem, Tamilnadu,</p>
+                    <p>India.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom scroll-rotate">
+        © Copyright 2025 by Stackly.
+    </div>
+</footer>
+
+<script>
+    const emailInput = document.getElementById("emailInput");
+    const subscribeBtn = document.getElementById("subscribeBtn");
+    const emailError = document.getElementById("emailError");
+
+    subscribeBtn.addEventListener("click", function () {
+        const email = emailInput.value.trim();
+
+        // Clear previous error
+        emailError.style.display = "none";
+        emailInput.style.borderColor = "#ccc";
+
+        // Check empty
+        if (email === "") {
+            emailError.innerText = "Please fill the field";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailError.innerText = "Please enter a valid email address";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Success → Redirect to 404 page
+        window.location.href = "404.html";
+    });
+</script>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("mobileNav").classList.toggle("active");
+}
+
+document.querySelectorAll(".dropdown-toggle").forEach(btn=>{
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        const parent = this.closest(".dropdown");
+        parent.classList.toggle("open");
+    });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".scroll-rotate");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+
+</body>
+</html>

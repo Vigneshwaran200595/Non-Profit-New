@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Charity Admin Dashboard – Events</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-box">
+            <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html"><i class="ri-home-4-fill"></i> Dashboard</a>
+            <a href="volunters.html"><i class="ri-hand-heart-line"></i> Volunteers</a>
+            <a href="donations.html"><i class="ri-money-dollar-circle-line"></i> Donations</a>
+            <a href="events.html" class="active"><i class="ri-calendar-event-line"></i> Events</a>
+            <a href="users.html"><i class="ri-user-3-line"></i> Users</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP HEADER -->
+        <header class="top-header">
+            <h1>Events Overview</h1>
+
+            <div class="right-controls">
+                <!-- HOME BUTTON -->
+                <a href="index.html" class="home-btn">
+                    <i class="ri-home-4-fill"></i>
+                </a>
+
+                <!-- ADMIN PROFILE -->
+                <div class="admin-box">
+                    <img src="img/u1.webp" class="admin-img">
+                    <span class="admin-name">Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- EVENT STATS -->
+        <div class="vol-stats">
+
+            <div class="vol-card">
+                <i class="ri-calendar-check-fill vol-icon"></i>
+                <h3>Total Events</h3>
+                <p>245</p>
+            </div>
+
+            <div class="vol-card">
+                <i class="ri-map-pin-user-line vol-icon"></i>
+                <h3>Events This Month</h3>
+                <p>18</p>
+            </div>
+
+            <div class="vol-card">
+                <i class="ri-notification-3-line vol-icon"></i>
+                <h3>Upcoming Events</h3>
+                <p>12</p>
+            </div>
+
+        </div>
+
+        <!-- CHART SECTION -->
+        <section class="charts">
+
+            <!-- CHART 1 -->
+            <div class="chart-area">
+                <h3 class="chart-title">Events by Area</h3>
+                <canvas id="eventChart1"></canvas>
+            </div>
+
+            <!-- CHART 2 -->
+            <div class="chart-area">
+                <h3 class="chart-title">Monthly Event Growth</h3>
+                <canvas id="eventChart2"></canvas>
+            </div>
+
+        </section>
+
+        <!-- EVENT TABLE -->
+        <h3 class="table-title">Events List</h3>
+
+        <table class="vol-table">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Food Donation Camp</td><td>Salem</td><td>05 Feb 2025</td><td>Upcoming</td></tr>
+                <tr><td>Blood Donation Drive</td><td>Attur</td><td>22 Jan 2025</td><td>Completed</td></tr>
+                <tr><td>Clothes Distribution</td><td>Mettur</td><td>10 Feb 2025</td><td>Upcoming</td></tr>
+                <tr><td>Tree Plantation</td><td>Omalur</td><td>28 Jan 2025</td><td>Completed</td></tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</div>
+
+<!-- ================================
+     EVENT CHART SCRIPTS
+================================ -->
+
+<script>
+// ----------------------
+//  EVENT CHART 1 (BAR)
+// ----------------------
+const e1 = document.getElementById('eventChart1');
+
+new Chart(e1, {
+    type: 'bar',
+    data: {
+        labels: ['Salem', 'Omalur', 'Attur', 'Mettur', 'Edappadi'],
+        datasets: [{
+            label: 'Number of Events',
+            data: [60, 35, 45, 30, 25],
+            backgroundColor: '#d34932',
+            borderRadius: 8
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false }},
+        scales: {
+            x: { grid: { display: false }},
+            y: { grid: { color: "#eee" }}
+        }
+    }
+});
+
+
+// ----------------------
+//  EVENT CHART 2 (LINE)
+// ----------------------
+const e2 = document.getElementById('eventChart2');
+
+new Chart(e2, {
+    type: 'line',
+    data: {
+        labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+        datasets: [{
+            label: 'Events Per Month',
+            data: [18, 21, 25, 30, 38, 28],
+            borderColor: '#d34932',
+            backgroundColor: 'rgba(211,73,50,0.2)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false }},
+        scales: {
+            x: { grid: { display: false }},
+            y: { grid: { color: "#eee" }}
+        }
+    }
+});
+</script>
+
+</body>
+</html>

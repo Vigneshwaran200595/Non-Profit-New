@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 | Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #163a33;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    /* ===== FLOATING BACKGROUND SHAPES ===== */
+    .bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    .shape1 {
+      width: 260px;
+      height: 260px;
+      background: #16c784;
+      top: 10%;
+      left: -80px;
+    }
+
+    .shape2 {
+      width: 180px;
+      height: 180px;
+      background: #ff8a2a;
+      bottom: 15%;
+      right: -60px;
+      animation-delay: 2s;
+    }
+
+    .shape3 {
+      width: 120px;
+      height: 120px;
+      background: #ffffff;
+      top: 25%;
+      right: 20%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* ===== CONTAINER ===== */
+    .error-container {
+      position: relative;
+      text-align: center;
+      max-width: 540px;
+      padding: 40px;
+      z-index: 2;
+    }
+
+    /* ===== LOGO IMAGE ===== */
+    .logo {
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 220px;
+      max-width: 100%;
+    }
+
+    /* ===== 404 TEXT ===== */
+    .error-code {
+      font-size: 120px;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 0 30px rgba(22,199,132,0.6);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* ===== TEXT ===== */
+    .error-title {
+      font-size: 28px;
+      margin: 20px 0 12px;
+    }
+
+    .error-desc {
+      font-size: 15px;
+      color: #d9f3ec;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    /* ===== BUTTON ===== */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 36px;
+      background: linear-gradient(135deg, #16c784, #ff8a2a);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 40px;
+      transition: all 0.35s ease;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .back-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .error-code {
+        font-size: 90px;
+      }
+
+      .error-title {
+        font-size: 22px;
+      }
+
+      .logo img {
+        width: 150px;
+      }
+
+      .error-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BACKGROUND SHAPES -->
+  <div class="bg-shape shape1"></div>
+  <div class="bg-shape shape2"></div>
+  <div class="bg-shape shape3"></div>
+
+  <!-- CONTENT -->
+  <div class="error-container">
+
+    <!-- LOGO IMAGE -->
+    <div class="logo">
+      <img src="Images/logo.png" alt="Stackly Charity Logo">
+    </div>
+
+    <div class="error-code">404</div>
+
+    <h2 class="error-title">Page Not Found</h2>
+
+    <p class="error-desc">
+      The page you are looking for might have been removed.
+      Let’s guide you back to a safe place.
+    </p>
+
+    <a href="index.html" class="back-btn">
+      ← Back to Home
+    </a>
+
+  </div>
+
+</body>
+</html>

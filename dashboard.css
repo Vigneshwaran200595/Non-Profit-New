@@ -1,0 +1,347 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #efe8e3;
+    color: #000;
+}
+
+.dashboard {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #d34932;
+    height: 100vh;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+.logo-box {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 160px;
+    border-radius: 50%;
+}
+
+.logo-box h2 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 14px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu a i {
+    margin-right: 10px;
+}
+
+.menu a:hover,
+.menu .active {
+    background: #000;
+}
+
+/* MAIN CONTENT */
+.main {
+    margin-left: 260px;
+    padding: 30px;
+    width: calc(100% - 260px);
+}
+
+/* TOP HEADER */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card i {
+    font-size: 40px;
+    color: #d34932;
+}
+
+.card p {
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CHARTS */
+.charts {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.chart-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 180px;
+    }
+    .main {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+
+
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-btn {
+    background: #d34932;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.home-btn:hover {
+    background: #000;
+}
+
+
+.vol-stats {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.vol-stats i {
+    font-size: 40px;
+    color: #d34932;
+}
+.vol-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.vol-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.vol-card p {
+    font-size: 26px;
+    font-weight: 800;
+    color: #d34932;
+}
+
+.chart-area {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.table-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.vol-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.vol-table th {
+    background: #d34932;
+    padding: 12px;
+    color: #fff;
+    text-align: left;
+}
+
+.vol-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.vol-table tr:hover {
+    background: #efe8e3;
+}
+
+/* MOBILE DEVICES (Max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* SIDEBAR COLLAPSE */
+    .sidebar {
+        width: 160px;
+        padding: 20px 10px;
+        height:100vh;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .logo-box h2 {
+        font-size: 18px;
+    }
+
+    .menu a {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    /* MAIN AREA */
+    .main {
+        margin-left: 170px;
+        width: calc(100% - 170px);
+        padding: 20px;
+    }
+
+    .top-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    /* HOME BUTTON */
+    .home-btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    /* CARDS => SINGLE COLUMN */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .card i {
+        font-size: 34px;
+    }
+
+    /* VOLUNTEER STATS */
+    .vol-stats {
+        flex-direction: column;
+    }
+
+    .vol-card p {
+        font-size: 16px;
+    }
+
+    /* CHART SECTION => SINGLE COLUMN */
+    .charts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .chart-box {
+        padding: 18px;
+    }
+
+    /* TABLE */
+    .vol-table th,
+    .vol-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .table-title {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* Remove sidebar push effect */
+    .main {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* 2 cards per row — NO OVERLAP */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

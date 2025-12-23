@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Charity Admin Dashboard – Users</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-box">
+            <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html"><i class="ri-home-4-fill"></i> Dashboard</a>
+            <a href="volunters.html"><i class="ri-hand-heart-line"></i> Volunteers</a>
+            <a href="donations.html"><i class="ri-money-dollar-circle-line"></i> Donations</a>
+            <a href="events.html"><i class="ri-calendar-event-line"></i> Events</a>
+            <a href="users.html" class="active"><i class="ri-user-3-line"></i> Users</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP HEADER -->
+        <header class="top-header">
+            <h1>Users Overview</h1>
+
+            <div class="right-controls">
+
+                <!-- HOME BUTTON -->
+                <a href="index.html" class="home-btn">
+                    <i class="ri-home-4-fill"></i>
+                </a>
+
+                <!-- ADMIN PROFILE -->
+                <div class="admin-box">
+                    <img src="img/u1.webp" class="admin-img">
+                    <span class="admin-name">Admin</span>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- USER STATS -->
+        <div class="vol-stats">
+
+            <div class="vol-card">
+                <i class="ri-user-3-fill vol-icon"></i>
+                <h3>Total Users</h3>
+                <p>5,420</p>
+            </div>
+
+            <div class="vol-card">
+                <i class="ri-shield-user-line vol-icon"></i>
+                <h3>Active Users</h3>
+                <p>4,980</p>
+            </div>
+
+            <div class="vol-card">
+                <i class="ri-user-add-line vol-icon"></i>
+                <h3>New This Month</h3>
+                <p>342</p>
+            </div>
+
+        </div>
+
+        <!-- CHART SECTION -->
+        <section class="charts">
+
+            <!-- CHART 1 -->
+            <div class="chart-area">
+                <h3 class="chart-title">Monthly User Growth</h3>
+                <canvas id="usersChart1"></canvas>
+            </div>
+
+            <!-- CHART 2 -->
+            <div class="chart-area">
+                <h3 class="chart-title">User Role Distribution</h3>
+                <canvas id="usersChart2"></canvas>
+            </div>
+
+        </section>
+
+        <!-- USER TABLE -->
+        <h3 class="table-title">Users List</h3>
+
+        <table class="vol-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Vigneshwaran</td><td>vicky@gmail.com</td><td>Admin</td><td>Active</td></tr>
+                <tr><td>Arun</td><td>arun123@gmail.com</td><td>Volunteer</td><td>Active</td></tr>
+                <tr><td>Kavitha</td><td>kavi88@gmail.com</td><td>User</td><td>Inactive</td></tr>
+                <tr><td>Prasanth</td><td>prasanth@gmail.com</td><td>User</td><td>Active</td></tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</div>
+
+<!-- ================================
+     USER CHART SCRIPTS
+================================ -->
+
+<script>
+// --------------------------
+//  CHART 1 – USER GROWTH (LINE)
+// --------------------------
+const u1 = document.getElementById('usersChart1');
+
+new Chart(u1, {
+    type: 'line',
+    data: {
+        labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+        datasets: [{
+            label: 'New Users',
+            data: [300, 350, 420, 500, 600, 550],
+            borderColor: '#d34932',
+            backgroundColor: 'rgba(211,73,50,0.2)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { grid: { display: false } },
+            y: { grid: { color: "#eee" } }
+        }
+    }
+});
+
+
+// ------------------------------
+//  CHART 2 – USER ROLES (DOUGHNUT)
+// ------------------------------
+const u2 = document.getElementById('usersChart2');
+
+new Chart(u2, {
+    type: 'doughnut',
+    data: {
+        labels: ['Admins', 'Volunteers', 'Users'],
+        datasets: [{
+            label: 'Role Count',
+            data: [120, 980, 4300],
+            backgroundColor: [
+                '#d34932',
+                '#333333',
+                '#efe8e3'
+            ],
+            hoverOffset: 12,
+            borderWidth: 0
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#000',
+                    font: { size: 14 }
+                }
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1296 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* ▬ TOP BAR ▬ */
+.top-bar{
+    background:#efe8e3;
+    padding:12px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top-left a{
+    margin-right:15px;
+    color:#3a3a3a;
+    font-size:15px;
+}
+.top-left a:hover{ color:#d34932; }
+
+.top-right span{
+    margin-left:30px;
+    font-size:14px;
+    color:#4a4a4a;
+}
+.top-right i{
+    color:#d34932;
+    margin-right:6px;
+}
+
+/* MAIN HEADER */
+.header{
+    width:100%;
+    display:flex;
+    background-color: #efe8e3;
+    align-items:center;
+    position:relative;
+}
+
+/* LEFT RED SECTION */
+.header-red{
+    background:#e53935;
+    color:#fff;
+    padding:20px 20px;
+    padding-right:150px;
+    display:flex;
+    width:18%;
+    align-items:center;
+    gap:45px;
+    height:95px;
+    border-top-right-radius:60px;
+    border-bottom-right-radius:60px;
+}
+
+.logo{
+    height:60px;
+}
+
+/* DESKTOP MENU */
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:38px;
+    margin-left:50px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#1c0606;
+    font-size:16px;
+    font-weight:600;
+    transition:0.2s;
+}
+nav ul li a:hover{ color:#f30909; }
+
+/* BLACK BUTTON */
+.header-black-btn{
+    background:#1b1d22;
+    height:95px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:0 50px;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    width:45%;
+    border-top-left-radius:60px;
+    border-bottom-left-radius:60px;
+    margin-left:60px;
+    position:relative;
+    overflow:hidden;
+    transition:0.4s ease;
+}
+
+.header-black-btn i{ color:#e53935; }
+
+/* Hover Effects */
+.header-black-btn:hover::before{ left:0; }
+.header-black-btn:hover i,
+.header-black-btn:hover span{ color:#fff; }
+.header-black-btn:hover span::after{
+    width:100%;
+    background:#fff;
+}
+
+/* DESKTOP DROPDOWN */
+.dropdown{ position:relative; }
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#e53935;
+    padding:10px 0;
+    min-width:150px;
+    display:none;
+    flex-direction:column;
+    border-radius:6px;
+}
+.dropdown-menu li a{
+    padding:10px 20px;
+    color:#fff;
+    display:block;
+}
+.dropdown:hover .dropdown-menu{ display:flex; }
+
+/* ========== MOBILE VIEW ========== */
+.menu-toggle{ display:none; }
+
+@media(max-width:768px){
+
+    .header{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .header-red{
+        width:100%;
+        padding:15px;
+        height:auto;
+        border-radius:0;
+        justify-content:space-between;
+        gap:0;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:34px;
+        cursor:pointer;
+        color:#fff;
+        margin-left:auto;
+    }
+
+    .home-main {
+        margin-left: 170px;
+
+    }
+    nav{ width:100%;}
+    nav ul{
+        flex-direction:column;
+        width:100%;
+        background:#e53935;
+        display:none;
+        margin-left: -1px;
+    }
+    nav.active ul{ display:flex; }
+
+    nav ul li{
+        width:100%;
+        text-align:center;
+        padding:12px 0;
+    }
+    nav ul li a{ color:#fff; font-size:18px; }
+
+    /* HOME + ARROW LINE */
+    .dropdown{
+        width:100%;
+    }
+
+    .dropdown-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 20px;
+        width:100%;
+    }
+
+    .dropdown-header a{
+        color:#fff;
+        font-size:18px;
+        flex:1;
+        text-align:center;
+    }
+
+    .dropdown-toggle{
+        display:block;
+        font-size:18px;
+        color:#fff;
+        margin-right: 140px;
+        cursor:pointer;
+    }
+
+    /* DROPDOWN ITEMS */
+    .dropdown-menu{
+        position:relative !important;
+        width:100% !important;
+        background:#c72828;
+        padding:0;
+        margin:0;
+        display:none !important;
+        border-radius:0;
+    }
+
+    .dropdown-menu li{
+        padding:12px 20px;
+        text-align:left;
+    }
+
+    .dropdown.open .dropdown-menu{
+        display:block !important;
+    }
+
+    /* Disable desktop hover */
+    .dropdown:hover .dropdown-menu{
+        display:none !important;
+    }
+
+    /* Full width create account */
+    .header-black-btn{
+        width:100%;
+        margin-left:0;
+        border-radius:0;
+        height:70px;
+    }
+
+
+}
+
+
+
+/* MOBILE DROPDOWN FIX */
+@media(max-width:768px){
+
+    .dropdown { width:100%; }
+
+    /* Home + Arrow row */
+    .dropdown-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 20px;
+        width:100%;
+    }
+
+    /* Home text centered */
+    .dropdown-header a{
+        color:#fff;
+        font-size:18px;
+        flex:1;
+        text-align:center;
+    }
+
+    /* Arrow positioned on right */
+    .dropdown-toggle{
+        display:block;
+        font-size:18px;
+        color:#fff;
+        cursor:pointer;
+        margin-left:10px;
+    }
+
+    /* Dropdown items below Home */
+    .dropdown-menu{
+        position:relative !important;
+        width:100%;
+        background:#c72828;
+        display:none !important;
+        padding:0;
+        margin:0;
+        border-radius:0;
+    }
+
+    /* Center Home 1 & Home 2 */
+    .dropdown-menu li{
+        padding:12px 0;
+        text-align:center;
+    }
+
+    /* Show when clicking arrow */
+    .dropdown.open .dropdown-menu{
+        display:block !important;
+    }
+
+    /* Disable desktop hover */
+    .dropdown:hover .dropdown-menu{
+        display:none !important;
+    }
+}
+
+
+/* DESKTOP DROPDOWN */
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #e53935;
+    padding: 10px 0;
+    min-width: 150px;
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* ========== MOBILE VIEW ========== */
+@media(max-width:768px){
+
+    /* Disable desktop hover */
+    .dropdown:hover .dropdown-menu{
+        display: none !important;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    /* Home row */
+    .dropdown-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    /* Home text centered */
+    .dropdown-header a{
+        flex: 1;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /* Arrow on right */
+    .dropdown-toggle{
+        display: block;
+        font-size: 18px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    /* Dropdown under Home */
+    .dropdown-menu{
+        position: relative !important;
+        width: 100%;
+        background: #c72828;
+        display: none !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Center submenu items */
+    .dropdown-menu li{
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    /* Show on arrow click */
+    .dropdown.open .dropdown-menu{
+        display: block !important;
+    }
+}
+
+
+/* ========== DESKTOP DROPDOWN ========== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Desktop arrow visible */
+.dropdown-toggle {
+    display: inline-block;
+    font-size: 14px;
+    color: #1c0606;
+    cursor: default;     /* desktop = no click */
+    transition: 0.3s;
+}
+
+/* Desktop dropdown box */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 99999;
+    left: 0;
+    margin-left: -10px;
+    background: #e53935;
+    padding: 10px 0;
+    min-width: 120px;
+    display: none;
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: white;
+    display: block;
+}
+
+/* KEEP MENU OPEN WHEN CURSOR MOVES DOWN */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: flex;
+    color: white;
+}
+
+/* FIX: Desktop dropdown text hover color */
+.dropdown-menu li a:hover {
+    background: #fff;      /* white background */
+    color: #e53935 !important;   /* red text */
+}
+
+/* ========== MOBILE DROPDOWN ========== */
+@media (max-width:768px) {
+
+    /* Disable desktop hover on mobile */
+    .dropdown:hover .dropdown-menu {
+        display: none !important;
+    }
+
+    /* Show arrow clickable on mobile */
+    .dropdown-toggle {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .dropdown-header {
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    /* Mobile dropdown list */
+    .dropdown-menu {
+        position: relative !important;
+        background: #c72828;
+        width: 100%;
+        display: none !important;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu li {
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    /* OPEN ON MOBILE CLICK */
+    .dropdown.open .dropdown-menu {
+        display: block !important;
+    }
+}
+
+/* MOBILE NAV ITEM FIX */
+@media(max-width:768px){
+
+    /* Reduce space between items */
+    nav ul li{
+        width:100%;
+        text-align:center;
+        padding:10px 0;       /* reduced from big padding */
+        margin:0;
+        position:relative;
+    }
+
+    /* Add bottom separator line */
+    nav ul li::after{
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:20px;
+        right:20px;
+        height:1px;
+        background:rgba(255,255,255,0.35);  /* light white line */
+    }
+
+    /* For dropdown-sub items also */
+    .dropdown-menu li{
+        padding:10px 0;
+        text-align:center;
+        position:relative;
+    }
+
+    .dropdown-menu li::after{
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:30px;
+        right:30px;
+        height:1px;
+        background:rgba(255,255,255,0.25);
+    }
+}
+
+@media(max-width:768px){
+
+    .dropdown-header{
+        display:flex;
+        justify-content:center;     /* Center everything */
+        align-items:center;
+        padding:12px 20px;
+        width:100%;
+        position:relative;
+    }
+
+    /* Center HOME text */
+    .dropdown-header a{
+        flex:0;
+        margin:auto;
+        text-align:center;
+        color:#fff;
+        font-size:18px;
+    }
+
+    /* Arrow EXACTLY on right side - NO SHIFT */
+    .dropdown-toggle{
+        position:absolute;
+        right:130px;               /* Always right side */
+        font-size:18px;
+        color:#fff;
+        margin:0 !important;      /* Remove old right margin */
+        padding:0;
+        cursor:pointer;
+    }
+
+    /* Dropdown list full width */
+    .dropdown-menu{
+        position:relative !important;
+        width:100% !important;
+        background:#c72828;
+        display:none !important;
+        border-radius:0;
+        padding:0;
+        margin:0;
+    }
+
+}
+
+/* HERO SECTION */
+.page-hero{
+    width:100%;
+    height:420px;
+    background:url('img/bg.webp') center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+/* DARK OVERLAY */
+.hero-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    z-index:1;
+}
+
+/* CONTENT */
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+}
+
+.hero-content h1{
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+/* BREADCRUMB BOX */
+.breadcrumb{
+    display:inline-flex;
+    background:#151515;
+    padding:12px 28px;
+    border-radius:40px;
+    gap:8px;
+    font-size:17px;
+    align-items:center;
+}
+
+.breadcrumb a{
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.breadcrumb span{
+    color:#fff;
+}
+
+.breadcrumb .active{
+    color:#e64232;
+    font-weight:700;
+}
+
+/* DECORATIVE DOTS */
+.dot-small{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#e64232;
+    position:absolute;
+    top:38%;
+    left:50%;
+    transform:translateX(100px);
+    z-index:2;
+}
+
+.dot-big{
+    width:20px;
+    height:20px;
+    border:2px solid #e64232;
+    border-radius:50%;
+    position:absolute;
+    top:35%;
+    right:18%;
+    z-index:2;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .page-hero{
+        height:300px;
+    }
+    .hero-content h1{
+        font-size:38px;
+    }
+    .breadcrumb{
+        font-size:14px;
+        padding:10px 20px;
+    }
+    .dot-small, .dot-big{
+        display:none; /* Hide dots on mobile */
+    }
+}
+
+
+/* GRID */
+.event-section{
+    padding:80px 7%;
+    overflow: hidden;
+}
+
+.event-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+
+/* CARD */
+.event-card{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    padding-bottom:25px;
+    overflow:hidden;
+    transition:0.35s ease;
+    position:relative;
+}
+
+/* HOVER EFFECT – ENTIRE CARD TURNS RED */
+.event-card:hover{
+    background:#e64232;
+    transform:translateY(-8px);
+}
+
+.event-card:hover *{
+    color:#fff !important;
+}
+
+.event-card:hover .event-btn{
+    background:#fff;
+    color:#000 !important;
+}
+
+/* IMAGE */
+.event-img{
+    position:relative;
+}
+
+.event-img img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+/* DATE BADGE */
+.event-date{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#e64232;
+    padding:6px 15px;
+    border-radius:6px;
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    z-index:5;
+}
+
+/* CATEGORY TAG */
+.event-category{
+    padding:6px 14px;
+    font-size:13px;
+    font-weight:700;
+    border-radius:6px;
+    margin:15px 20px;
+    display:inline-block;
+}
+
+/* CATEGORY COLORS */
+.cat-red{ background:#ffe4e4; color:#e64232; }
+.cat-orange{ background:#ffe8d6; color:#f57c00; }
+.cat-yellow{ background:#fff5cc; color:#e6a800; }
+.cat-green{ background:#e0ffe5; color:#28a745; }
+
+/* TITLE */
+.event-title{
+    font-size:18px;
+    font-weight:700;
+    margin:0 20px 10px;
+}
+
+/* INFO */
+.event-info{
+    margin:0 20px 15px;
+}
+
+.event-info p{
+    font-size:15px;
+    margin-bottom:8px;
+    color:#555;
+}
+
+.event-info i{
+    color:#e64232;
+    margin-right:8px;
+}
+
+/* BUTTON */
+.event-btn{
+    display:block;
+    text-align:center;
+    width:150px;
+    margin:15px auto 0;
+    padding:10px 18px;
+    background:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+/* EVENT CARD */
+.event-card{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 6px 25px rgba(0,0,0,0.08);
+    overflow:hidden;
+    transition:0.35s ease;
+    padding-bottom:25px;
+    border:1px solid #f0f0f0;
+}
+
+/* IMAGE */
+.event-img img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.event-date{
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:#e64232;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:700;
+}
+
+/* CATEGORY TAG */
+.event-category{
+    background:#ffe4e4;
+    color:#e64232;
+    padding:5px 12px;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:700;
+    margin:12px 20px;
+    display:inline-block;
+}
+
+/* TITLE */
+.event-title{
+    margin:5px 20px;
+    font-size:17px;
+    font-weight:700;
+    color:#000;
+}
+
+/* INFO */
+.event-info{
+    margin:10px 20px 20px;
+}
+
+.event-info p{
+    font-size:14px;
+    color:#444;
+    margin-bottom:8px;
+}
+
+.event-info i{
+    color:#e64232;
+    margin-right:7px;
+}
+
+/* BUTTON */
+.event-btn{
+    display:block;
+    width:140px;
+    margin:10px auto 0;
+    padding:10px 18px;
+    text-align:center;
+    background:#fff;
+    border-radius:6px;
+    color:#000;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+
+/* =====================================================
+   🔥 HOVER EFFECT (EXACT MATCH TO YOUR RED STYLE)
+   ===================================================== */
+
+.event-card:hover{
+    background:#e64232;        /* full red bottom */
+    transform:translateY(-6px);
+}
+
+/* turn text white on hover */
+.event-card:hover .event-title,
+.event-card:hover .event-info p,
+.event-card:hover .event-info i{
+    color:#fff !important;
+}
+
+/* keep category color same */
+.event-card:hover .event-category{
+    background:#fff;
+    color:#e64232 !important;
+}
+
+/* button stays white */
+.event-card:hover .event-btn{
+    background:#fff;
+    color:#000 !important;
+}
+
+/* ================================
+   📱 MOBILE DEVICE MEDIA QUERY
+   ================================ */
+@media (max-width: 768px) {
+
+    /* Section Padding */
+    .event-section {
+        padding: 40px 5%;
+    }
+
+    /* 1 Card Per Row */
+    .event-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    /* Card */
+    .event-card {
+        padding-bottom: 20px;
+        border-radius: 12px;
+    }
+
+    /* Image */
+    .event-img img {
+        height: 180px;
+    }
+
+    /* Title */
+    .event-title {
+        font-size: 16px;
+        margin: 8px 16px;
+    }
+
+    /* Category Tag */
+    .event-category {
+        margin: 12px 16px;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    /* Event Info */
+    .event-info {
+        margin: 0 16px 15px;
+    }
+
+    .event-info p {
+        font-size: 13px;
+    }
+
+    .event-info i {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    /* Date Badge */
+    .event-date {
+        font-size: 12px;
+        padding: 5px 12px;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Button */
+    .event-btn {
+        width: 130px;
+        padding: 9px 14px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+.footer-section {
+    background: #1b1c1f;
+    color: #bbb;
+    padding: 70px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* GRID LAYOUT */
+.footer-container {
+    display: grid;
+    grid-template-columns: 32% 20% 20% 28%;
+    gap: 40px;
+    align-items: start;
+    position: relative;
+}
+
+.footer-container::before,
+.footer-container::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: rgba(255,255,255,0.07);
+    top: 0;
+    bottom: 0;
+}
+
+.footer-container::before { left: 32%; }
+.footer-container::after { left: 52%; }
+
+/* LOGO ROW */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    color: #fff;
+}
+
+/* SUBSCRIBE BOX */
+.subscribe-box {
+    margin: 30px 0;
+    position: relative;
+}
+
+.subscribe-box input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+}
+
+.subscribe-box button {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #e64232;
+    cursor: pointer;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #2a2b2e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #e64232;
+}
+
+/* COLUMNS HEADERS */
+.footer-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* LIST LINKS */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #e64232;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 15px;
+    color: #000;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* ARROW POINTER */
+.contact-box .arrow {
+    position: absolute;
+    left: -18px;
+    top: 22px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.contact-box .phone-icon {
+    font-size: 28px;
+    color: #000;
+}
+
+/* CONTACT ITEMS */
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    font-size: 28px;
+    background: #2a2b2e;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+    background: #e64232;
+    padding: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+
+/* ============================================================
+   FOOTER — MOBILE VIEW (CENTER EVERYTHING)  (MAX-WIDTH: 768px)
+   ============================================================ */
+@media (max-width: 768px){
+
+    .footer-section{
+        padding: 50px 6%;
+        text-align: center;      /* CENTER ALL TEXT */
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;   /* Single Column */
+        gap: 35px;
+        justify-items: center;        /* CENTER ALL GRID ITEMS */
+        text-align: center;
+    }
+
+    /* Remove dividing vertical lines */
+    .footer-container::before,
+    .footer-container::after{
+        display: none;
+    }
+
+    /* Center Logo */
+    .footer-logo{
+        justify-content: center;   /* CENTER LOGO */
+    }
+
+    .footer-logo img{
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Subscribe box -> center */
+    .subscribe-box{
+        width: 100%;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscribe-box input{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .subscribe-box button{
+        right: 12px;
+        font-size: 20px;
+    }
+
+    /* Social Icons Center */
+    .social-icons{
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Footer columns */
+    .footer-col{
+        text-align: center;
+    }
+
+    .footer-col ul{
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-col ul li{
+        text-align: center;
+    }
+
+    /* Contact box center */
+    .contact-box{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-item{
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Bottom Bar */
+    .footer-bottom{
+        text-align: center;
+    }
+}
+
+
+/* ============================================================
+   EXTRA SMALL MOBILE — FULL CENTER (MAX-WIDTH: 450px)
+   ============================================================ */
+@media (max-width: 450px){
+
+    .footer-section{
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .footer-logo img{
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .subscribe-box{
+        max-width: 320px;
+    }
+
+    .social-icons a{
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact-box{
+        padding: 14px 16px;
+    }
+
+    .footer-bottom{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* ====== ROTATE-IN SCROLL ANIMATION ====== */
+.scroll-rotate {
+    opacity: 0;
+    transform: rotateX(45deg) translateY(40px);
+    transition: 1.5s ease;
+}
+
+/* When element becomes visible */
+.scroll-rotate.show {
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0);
+}

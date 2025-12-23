@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Charity Admin Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-box">
+            <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html"><i class="ri-home-4-fill"></i> Dashboard</a>
+            <a href="volunters.html" class="active"><i class="ri-hand-heart-line"></i> Volunteers</a>
+            <a href="donations.html"><i class="ri-money-dollar-circle-line"></i> Donations</a>
+            <a href="events.html"><i class="ri-calendar-event-line"></i> Events</a>
+            <a href="users.html"><i class="ri-user-3-line"></i> Users</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP HEADER -->
+       <header class="top-header">
+    <h1>Volunteers Overview</h1>
+
+    <div class="right-controls">
+
+        <!-- HOME BUTTON -->
+        <a href="index.html" class="home-btn">
+            <i class="ri-home-4-fill"></i>
+        </a>
+
+        <!-- ADMIN PROFILE -->
+        <div class="admin-box">
+            <img src="img/u1.webp" class="admin-img">
+            <span class="admin-name">Admin</span>
+        </div>
+
+    </div>
+</header>
+
+<div class="vol-stats">
+
+        <div class="vol-card">
+            <i class="ri-group-fill vol-icon"></i>
+            <h3>Total Volunteers</h3>
+            <p>1,240</p>
+        </div>
+
+        <div class="vol-card">
+            <i class="ri-user-smile-line vol-icon"></i>
+            <h3>Active Volunteers</h3>
+            <p>980</p>
+        </div>
+
+        <div class="vol-card">
+            <i class="ri-user-add-line vol-icon"></i>
+            <h3>New This Month</h3>
+            <p>124</p>
+        </div>
+
+    </div>
+<section class="charts">
+
+    <!-- Chart 1 -->
+    <div class="chart-area">
+        <h3 class="chart-title">Volunteers by Area</h3>
+        <canvas id="volunteerChart"></canvas>
+    </div>
+
+    <!-- Chart 2 -->
+    <div class="chart-area">
+        <h3 class="chart-title">Volunteer Skill Levels</h3>
+        <canvas id="volunteerChart2"></canvas>
+    </div>
+
+</section>
+
+
+    <h3 class="table-title">Volunteers List</h3>
+
+    <table class="vol-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Area</th>
+                <th>Hours Served</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Saranya</td><td>Salem</td><td>120</td><td>Active</td></tr>
+            <tr><td>Prakash</td><td>Omalur</td><td>65</td><td>Active</td></tr>
+            <tr><td>Vijay</td><td>Hasthampatti</td><td>40</td><td>Inactive</td></tr>
+            <tr><td>Anitha</td><td>Seelanaickenpatti</td><td>85</td><td>Active</td></tr>
+        </tbody>
+    </table>
+
+</section>
+
+    </main>
+
+</div>
+<script>
+
+// ------------------------------
+// CHART 1 – BAR CHART (same as before but kept)
+// ------------------------------
+const ctx = document.getElementById('volunteerChart');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Salem', 'Omalur', 'Attur', 'Mettur', 'Edappadi'],
+        datasets: [{
+            label: 'Volunteers Count',
+            data: [320, 150, 210, 180, 140],
+            backgroundColor: '#d34932',
+            borderRadius: 8
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { grid: { display: false }},
+            y: { grid: { color: "#eee" }}
+        }
+    }
+});
+
+
+// ------------------------------
+// CHART 2 – RADAR CHART (NEW!)
+// ------------------------------
+const ctx2 = document.getElementById('volunteerChart2');
+
+new Chart(ctx2, {
+    type: 'radar',
+    data: {
+        labels: ['Teaching', 'Medical Aid', 'Community Support', 'Food Service', 'Rescue Work'],
+        datasets: [{
+            label: 'Skill Level',
+            data: [80, 65, 90, 70, 55],
+            backgroundColor: 'rgba(211,73,50,0.25)',
+            borderColor: '#d34932',
+            pointBackgroundColor: '#d34932',
+            borderWidth: 3
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            r: {
+                grid: { color: "#ccc" },
+                angleLines: { color: "#bbb" },
+                pointLabels: { color:"#000", font:{ size:14 } }
+            }
+        },
+        plugins: { 
+            legend: { display: false }
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Charity Admin Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-box">
+            <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html" class="active"><i class="ri-home-4-fill"></i> Dashboard</a>
+            <a href="volunters.html"><i class="ri-hand-heart-line"></i> Volunteers</a>
+            <a href="donations.html"><i class="ri-money-dollar-circle-line"></i> Donations</a>
+            <a href="events.html"><i class="ri-calendar-event-line"></i> Events</a>
+            <a href="users.html"><i class="ri-user-3-line"></i> Users</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP HEADER -->
+       <header class="top-header">
+    <h1>Admin Dashboard</h1>
+
+    <div class="right-controls">
+
+        <!-- HOME BUTTON -->
+        <a href="index.html" class="home-btn">
+            <i class="ri-home-4-fill"></i>
+        </a>
+
+        <!-- ADMIN PROFILE -->
+        <div class="admin-box">
+            <img src="img/u1.webp" class="admin-img">
+            <span class="admin-name">Admin</span>
+        </div>
+
+    </div>
+</header>
+
+        <!-- STATS CARDS -->
+<section class="cards">
+
+    <div class="card">
+        <i class="ri-money-dollar-circle-fill"></i>
+        <h3>Total Donations</h3>
+        <p>$82,500</p>
+    </div>
+
+    <div class="card">
+        <i class="ri-team-fill"></i>
+        <h3>Active Campaigns</h3>
+        <p>42</p>
+    </div>
+
+    <div class="card">
+        <i class="ri-user-add-fill"></i>
+        <h3>New Users</h3>
+        <p>328</p>
+    </div>
+
+    <div class="card">
+        <i class="ri-user-heart-fill"></i>
+        <h3>Total Volunteers</h3>
+        <p>650</p>
+    </div>
+
+</section>
+
+        <!-- CHARTS SECTION -->
+        <section class="charts">
+
+            <div class="chart-box">
+                <h3>Monthly Donations</h3>
+                <canvas id="donationChart"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>New Volunteers (Yearly)</h3>
+                <canvas id="volunteerChart"></canvas>
+            </div>
+
+            <!-- EXTRA CHART 1 -->
+<div class="chart-box">
+    <h3>Donation Sources</h3>
+    <canvas id="donationSourceChart"></canvas>
+</div>
+
+<!-- EXTRA CHART 2 -->
+<div class="chart-box">
+    <h3>Volunteer Categories</h3>
+    <canvas id="volCategoryChart"></canvas>
+</div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

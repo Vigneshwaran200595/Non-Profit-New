@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+<!-- ▬ TOP BAR ▬ -->
+<div class="top-bar">
+    <div class="top-left">
+        <a href="404_1.html"><i class="fab fa-facebook-f"></i></a>
+        <a href="404_1.html"><i class="fab fa-twitter"></i></a>
+        <a href="404_1.html"><i class="fab fa-pinterest-p"></i></a>
+        <a href="404_1.html"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="top-right">
+        <span><i class="fas fa-location-dot"></i> Salem, Tamilnadu, India.</span>
+        <span><i class="fas fa-envelope"></i> needhelp@company.com</span>
+    </div>
+</div>
+
+<header class="header">
+
+    <div class="header-red">
+
+        <!-- LOGO -->
+        <a href="saas.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+
+        <!-- TOGGLE BUTTON -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    </div>
+
+   <nav id="mobileNav">
+    <ul>
+
+        <!-- HOME DROPDOWN -->
+      <li class="dropdown">
+
+    <div class="dropdown-header">
+        <a href="saas.html" class="home-main">Home</a>
+
+        <span class="dropdown-toggle">
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+    </div>
+
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home 1</a></li>
+    </ul>
+
+</li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="event1.html">Events</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="contact1.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+    <!-- BLACK BUTTON -->
+    <a href="login1.html" class="header-black-btn">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Create Account</span>
+    </a>
+
+</header>
+
+<section class="inner-banner">
+    <img src="img1/heart.webp" class="float-heart" />
+    <img src="img1/scratch.webp" class="float-scratch" />
+
+    <div class="banner-content wave-scroll">
+        <h1>SERVICES</h1>
+        <div class="breadcrumb">
+            <a href="saas.html">Home</a>
+            <span>›</span>
+            <p>Services</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-section">
+
+    <div class="service-header wave-scroll">
+        <span class="tag">Our Best Service</span>
+        <h2>We Help Poor This Life’s Service Now</h2>
+        <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+
+    <div class="service-container">
+
+        <!-- CARD 1 -->
+        <div class="service-card special wave-scroll">
+            <div class="top-box">
+                <h3>Money This Treatment</h3>
+                <p>Workflow ecosystem we're ahead of the curve on that one, yet re-inventing the wheel have.</p>
+                <div class="arrow-btn"><i class="fa-solid fa-handshake"></i></div>
+            </div>
+
+            <div class="bottom-box wave-scroll">
+                <img src="img/service1.webp" class="main-img">
+
+                 <div class="hover-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <!-- RED OVERLAY -->
+                <div class="hover-overlay"></div>
+            </div>
+        </div>
+
+        <!-- CARD 2 (Hover Effect Special) -->
+        <div class="service-card special wave-scroll">
+            <div class="top-box">
+                <h3>Fund Hand Children</h3>
+                <p>Product market fit. I have zero cycles for this products need full resourcing.</p>
+                <div class="arrow-btn"><i class="fa-solid fa-handshake"></i></div>
+            </div>
+
+            <div class="bottom-box wave-scroll">
+                <img src="img/service2.webp" class="main-img">
+
+                <!-- HOVER ICON OVER IMAGE -->
+                <div class="hover-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <!-- RED OVERLAY -->
+                <div class="hover-overlay"></div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="service-card special wave-scroll">
+            <div class="top-box">
+                <h3>Inspire Help Raised</h3>
+                <p>Not enough bandwidth make it more corporate please, or out of the loop.</p>
+                <div class="arrow-btn"><i class="fa-solid fa-handshake"></i></div>
+            </div>
+
+            <div class="bottom-box wave-scroll">
+                <img src="img/service3.webp" class="main-img">
+                
+                 <div class="hover-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <!-- RED OVERLAY -->
+                <div class="hover-overlay"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="donation-section">
+
+    <!-- LEFT IMAGE -->
+    <div class="donation-left wave-scroll">
+        <img src="img/about2.webp" alt="">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="donation-right wave-scroll">
+
+        <p class="donation-sub">Join Us Now</p>
+        <h2 class="donation-title">
+            Helping To Make Our<br>World Better Living
+        </h2>
+
+        <!-- DONATION AMOUNT OPTIONS -->
+        <div class="donation-options">
+            <button class="amount-btn active">$10</button>
+            <button class="amount-btn">$30</button>
+            <button class="amount-btn">$50</button>
+            <button class="amount-btn">$100</button>
+            <button class="amount-btn">$200</button>
+        </div>
+
+        <!-- CUSTOM AMOUNT -->
+        <div class="custom-amount-box">
+            <input type="text" placeholder="$ Costume Amount" class="custom-input">
+        </div>
+
+        <!-- DONATE BUTTON -->
+        <a href="404_1.html" class="donate-now-btn">
+            DONATE NOW
+            <span class="circle-arrow"><i class="ri-arrow-right-line"></i></span>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="join-us">
+    <div class="overlay"></div>
+
+    <div class="hero-content wave-scroll">
+        <h1>Creating Lasting Change in<br>Communities Worldwide</h1>
+
+        <div class="hero-buttons wave-scroll">
+            <a href="404_1.html" class="btn donate-btn">
+                Donate Now
+                <span class="arrow-circle">➜</span>
+            </a>
+
+            <a href="404_1.html" class="btn volunteer-btn">
+                Become a Volunteer
+                <span class="arrow-circle dark">➜</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col about wave-scroll">
+            <div class="footer-logo">
+                <img src="img/logo1.webp" alt="">
+            </div>
+
+            <p>There are many variations of passages of Lorem Ip available, but the majority have.</p>
+
+          <div class="subscribe-box wave-scroll">
+    <input type="email" id="emailInput" placeholder="Email Address">
+    <button id="subscribeBtn"><i class="ri-send-plane-2-fill"></i></button>
+</div>
+
+<p id="emailError" style="color:red; font-size:13px; margin-top:5px; display:none;"></p>
+
+            <div class="social-icons wave-scroll">
+                <a href="404_1.html"><i class="ri-facebook-fill"></i></a>
+                <a href="404_1.html"><i class="ri-twitter-fill"></i></a>
+                <a href="404_1.html"><i class="ri-pinterest-fill"></i></a>
+                <a href="404_1.html"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col wave-scroll">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="event1.html">Events</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col wave-scroll">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="404_1.html">Donate</a></li>
+                <li><a href="404_1.html">Campaigns</a></li>
+                <li><a href="404_1.html">Fundraise</a></li>
+                <li><a href="404_1.html">Online Service</a></li>
+                <li><a href="404_1.html">Volunteers</a></li>
+                <li><a href="404_1.html">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col contact wave-scroll">
+
+            <div class="contact-box">
+                <div class="arrow"></div>
+                <i class="ri-phone-fill phone-icon"></i>
+                <div>
+                    <h4>+91 1234567890</h4>
+                    <h4>+91 0987654321</h4>
+                </div>
+            </div>
+
+            <div class="contact-item wave-scroll">
+                <i class="ri-earth-fill"></i>
+                <div>
+                    <p>support@example.com</p>
+                    <p>www.website.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item wave-scroll">
+                <i class="ri-map-pin-fill"></i>
+                <div>
+                    <p>Salem, Tamilnadu,</p>
+                    <p>India.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © Copyright 2025 by Stackly.
+    </div>
+</footer>
+
+<script>
+    const emailInput = document.getElementById("emailInput");
+    const subscribeBtn = document.getElementById("subscribeBtn");
+    const emailError = document.getElementById("emailError");
+
+    subscribeBtn.addEventListener("click", function () {
+        const email = emailInput.value.trim();
+
+        // Clear previous error
+        emailError.style.display = "none";
+        emailInput.style.borderColor = "#ccc";
+
+        // Check empty
+        if (email === "") {
+            emailError.innerText = "Please fill the field";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailError.innerText = "Please enter a valid email address";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Success → Redirect to 404 page
+        window.location.href = "404_1.html";
+    });
+</script>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("mobileNav").classList.toggle("active");
+}
+
+document.querySelectorAll(".dropdown-toggle").forEach(btn=>{
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        const parent = this.closest(".dropdown");
+        parent.classList.toggle("open");
+    });
+});
+</script>
+
+<script>
+const waveElements = document.querySelectorAll('.wave-scroll');
+
+function animateWave() {
+    waveElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', animateWave);
+window.addEventListener('load', animateWave);
+</script>
+
+</body>
+</html>
+
+
+

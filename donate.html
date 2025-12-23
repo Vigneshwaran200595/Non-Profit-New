@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="donate.css">
+</head>
+<body>
+
+<!-- ▬ TOP BAR ▬ -->
+<div class="top-bar">
+    <div class="top-left">
+        <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+        <a href="404.html"><i class="fab fa-twitter"></i></a>
+        <a href="404.html"><i class="fab fa-pinterest-p"></i></a>
+        <a href="404.html"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="top-right">
+        <span><i class="fas fa-location-dot"></i> Salem, Tamilnadu, India.</span>
+        <span><i class="fas fa-envelope"></i> needhelp@company.com</span>
+    </div>
+</div>
+
+<header class="header">
+
+    <div class="header-red">
+
+        <!-- LOGO -->
+        <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+
+        <!-- TOGGLE BUTTON -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    </div>
+
+   <nav id="mobileNav">
+    <ul>
+
+        <!-- HOME DROPDOWN -->
+      <li class="dropdown">
+
+    <div class="dropdown-header">
+        <a href="index.html" class="home-main">Home</a>
+
+        <span class="dropdown-toggle">
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+    </div>
+
+    <ul class="dropdown-menu">
+        <li><a href="saas.html">Home 2</a></li>
+    </ul>
+
+</li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donations</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+    <!-- BLACK BUTTON -->
+    <a href="login.html" class="header-black-btn">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Create Account</span>
+    </a>
+
+</header>
+
+
+<section class="page-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content scroll-rotate">
+        <h1>Donate</h1>
+
+        <div class="breadcrumb scroll-rotate">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span class="active">Donations</span>
+        </div>
+    </div>
+
+    <!-- OPTIONAL DECORATIVE DOTS -->
+    <div class="dot-small"></div>
+    <div class="dot-big"></div>
+</section>
+
+
+<section class="cause-section">
+
+    <div class="section-title scroll-rotate">
+        <span class="tag"><i class="fa-solid fa-hand-holding-heart"></i> Help & Donate</span>
+        <h2>Find the Popular Cause <br> and Donate Them</h2>
+    </div>
+
+    <div class="cause-grid">
+
+        <!-- CARD 1 -->
+        <div class="cause-card scroll-rotate">
+            <img src="img/c1.webp" class="cause-img">
+            <span class="cause-label">CHARITY</span>
+
+            <div class="progress-box">
+                <div class="progress" style="width:85%"></div>
+            </div>
+
+            <div class="amounts">
+                <p>$9,511 <span>Raised</span></p>
+                <p>$8,220</p>
+            </div>
+
+            <h3 class="cause-title">Medical Health Or People React Acutor</h3>
+
+            <button class="donate-btn" onclick="window.location.href='404.html'">
+    Donate Now
+</button>
+
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="cause-card scroll-rotate">
+            <img src="img/c2.webp" class="cause-img">
+            <span class="cause-label">CHARITY</span>
+
+            <div class="progress-box yellow">
+                <div class="progress" style="width:90%"></div>
+            </div>
+
+            <div class="amounts">
+                <p>$3,912 <span>Raised</span></p>
+                <p>$4,343</p>
+            </div>
+
+            <h3 class="cause-title">Get Poor Money Strang People Acutor</h3>
+
+           <button class="donate-btn" onclick="window.location.href='404.html'">
+    Donate Now
+</button>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="cause-card scroll-rotate">
+            <img src="img/c3.webp" class="cause-img">
+            <span class="cause-label">CHARITY</span>
+
+            <div class="progress-box red">
+                <div class="progress" style="width:75%"></div>
+            </div>
+
+            <div class="amounts">
+                <p>$7,766 <span>Raised</span></p>
+                <p>$5,500</p>
+            </div>
+
+            <h3 class="cause-title">Get Poor Money Strang People Acutor</h3>
+
+            <button class="donate-btn" onclick="window.location.href='404.html'">
+    Donate Now
+</button>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="cause-card scroll-rotate">
+            <img src="img/c4.webp" class="cause-img">
+            <span class="cause-label">CHARITY</span>
+
+            <div class="progress-box yellow">
+                <div class="progress" style="width:80%"></div>
+            </div>
+
+            <div class="amounts">
+                <p>$1,266 <span>Raised</span></p>
+                <p>$1,910</p>
+            </div>
+
+            <h3 class="cause-title">Get Poor Money Strang People Acutor</h3>
+
+            <button class="donate-btn" onclick="window.location.href='404.html'">
+    Donate Now
+</button>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="donate-section">
+
+    <!-- LEFT IMAGE -->
+    <div class="donate-left scroll-rotate">
+        <img src="img/child1.webp" class="donate-child" alt="Child">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="donate-right scroll-rotate">
+
+        <div class="donate-tag">
+            Donate Now
+        </div>
+
+        <h2 class="donate-title">
+            Get Inspire Donate Help<br>Change a Life
+        </h2>
+
+        <div class="input-row">
+            <input id="name" type="text" placeholder="Your Name">
+            <input id="email" type="email" placeholder="Email Address">
+        </div>
+
+        <!-- AMOUNT BUTTONS -->
+        <div class="amount-row">
+            <button class="amount-btn" data-value="200">$200</button>
+            <button class="amount-btn" data-value="50">$50</button>
+            <button class="amount-btn" data-value="100">$100</button>
+            <button class="amount-btn" data-value="200">$200</button>
+            <button class="amount-btn" data-value="300">$300</button>
+            <button class="amount-btn custom-btn" data-value="">Custom</button>
+        </div>
+
+        <!-- AMOUNT INPUT (HIDDEN UNTIL CUSTOM CLICKED) -->
+        <input type="number" id="customAmount" class="custom-input" placeholder="Enter amount">
+
+        <p id="errorMsg" class="error-text"></p>
+
+        <a href="#" class="donate-main-btn" id="donateBtn">Donate Now</a>
+
+    </div>
+
+</section>
+
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col about scroll-rotate">
+            <div class="footer-logo">
+                <img src="img/logo1.webp" alt="">
+            </div>
+
+            <p>There are many variations of passages of Lorem Ip available, but the majority have.</p>
+
+          <div class="subscribe-box scroll-rotate">
+    <input type="email" id="emailInput" placeholder="Email Address">
+    <button id="subscribeBtn"><i class="ri-send-plane-2-fill"></i></button>
+</div>
+
+<p id="emailError" style="color:red; font-size:13px; margin-top:5px; display:none;"></p>
+
+            <div class="social-icons scroll-rotate">
+                <a href="404.html"><i class="ri-facebook-fill"></i></a>
+                <a href="404.html"><i class="ri-twitter-fill"></i></a>
+                <a href="404.html"><i class="ri-pinterest-fill"></i></a>
+                <a href="404.html"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col scroll-rotate">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col scroll-rotate">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="404.html">Campaigns</a></li>
+                <li><a href="404.html">Fundraise</a></li>
+                <li><a href="404.html">Online Service</a></li>
+                <li><a href="404.html">Volunteers</a></li>
+                <li><a href="404.html">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col contact">
+
+            <div class="contact-box scroll-rotate">
+                <div class="arrow"></div>
+                <i class="ri-phone-fill phone-icon"></i>
+                <div>
+                    <h4>+91 1234567890</h4>
+                    <h4>+91 0987654321</h4>
+                </div>
+            </div>
+
+            <div class="contact-item scroll-rotate">
+                <i class="ri-earth-fill"></i>
+                <div>
+                    <p>support@example.com</p>
+                    <p>www.website.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item scroll-rotate">
+                <i class="ri-map-pin-fill"></i>
+                <div>
+                    <p>Salem, Tamilnadu,</p>
+                    <p>India.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom scroll-rotate">
+        © Copyright 2025 by Stackly.
+    </div>
+</footer>
+
+
+
+<script>
+    const amountBtns = document.querySelectorAll(".amount-btn");
+    const customBtn = document.querySelector(".custom-btn");
+    const customInput = document.getElementById("customAmount");
+    const errorMsg = document.getElementById("errorMsg");
+    const donateBtn = document.getElementById("donateBtn");
+
+    let selectedAmount = "";
+
+    /* --------------------------
+       AMOUNT BUTTON CLICK
+    ---------------------------*/
+    amountBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            amountBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            if (btn.classList.contains("custom-btn")) {
+                customInput.style.display = "block";
+                customInput.value = "";
+                selectedAmount = "";
+                customInput.focus();
+            } else {
+                customInput.style.display = "none";
+                selectedAmount = btn.dataset.value;
+            }
+        });
+    });
+
+    /* CUSTOM AMOUNT INPUT */
+    customInput.addEventListener("input", () => {
+        selectedAmount = customInput.value;
+    });
+
+    /* --------------------------
+       DONATE BUTTON CLICK
+    ---------------------------*/
+    donateBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+
+        // RESET ERROR STYLES
+        errorMsg.style.display = "none";
+        name.classList.remove("error");
+        email.classList.remove("error");
+        customInput.classList.remove("error");
+
+        // NAME VALIDATION
+        if (name.value.trim() === "") {
+            showError("Please enter your name");
+            name.classList.add("error");
+            return;
+        }
+
+        // EMAIL REQUIRED
+        if (email.value.trim() === "") {
+            showError("Please enter your email");
+            email.classList.add("error");
+            return;
+        }
+
+        // EMAIL FORMAT
+        let emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailCheck.test(email.value)) {
+            showError("Please enter a valid email address");
+            email.classList.add("error");
+            return;
+        }
+
+        // AMOUNT REQUIRED
+        if (selectedAmount === "" || Number(selectedAmount) <= 0) {
+            showError("Please select or enter an amount");
+            customInput.classList.add("error");
+            return;
+        }
+
+        /* --------------------------
+           ALL VALID → INSTANT REDIRECT
+        ---------------------------*/
+        window.location.href = "404.html";
+    });
+
+    /* --------------------------
+       ERROR MESSAGE FUNCTION
+    ---------------------------*/
+    function showError(msg) {
+        errorMsg.innerText = msg;
+        errorMsg.style.display = "block";
+
+        setTimeout(() => {
+            errorMsg.style.display = "none";
+        }, 2000);
+    }
+</script>
+
+<script>
+    const emailInput = document.getElementById("emailInput");
+    const subscribeBtn = document.getElementById("subscribeBtn");
+    const emailError = document.getElementById("emailError");
+
+    subscribeBtn.addEventListener("click", function () {
+        const email = emailInput.value.trim();
+
+        // Clear previous error
+        emailError.style.display = "none";
+        emailInput.style.borderColor = "#ccc";
+
+        // Check empty
+        if (email === "") {
+            emailError.innerText = "Please fill the field";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailError.innerText = "Please enter a valid email address";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Success → Redirect to 404 page
+        window.location.href = "404.html";
+    });
+</script>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("mobileNav").classList.toggle("active");
+}
+
+document.querySelectorAll(".dropdown-toggle").forEach(btn=>{
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        const parent = this.closest(".dropdown");
+        parent.classList.toggle("open");
+    });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".scroll-rotate");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+</body>
+</html>

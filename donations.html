@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Donations Overview</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-box">
+            <a href="index.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html"><i class="ri-home-4-fill"></i> Dashboard</a>
+            <a href="volunters.html"><i class="ri-hand-heart-line"></i> Volunteers</a>
+            <a href="donations.html" class="active"><i class="ri-money-dollar-circle-line"></i> Donations</a>
+            <a href="events.html"><i class="ri-calendar-event-line"></i> Events</a>
+            <a href="users.html"><i class="ri-user-3-line"></i> Users</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP HEADER -->
+        <header class="top-header">
+            <h1>Donations Overview</h1>
+
+            <div class="right-controls">
+
+                <!-- HOME BUTTON -->
+                <a href="index.html" class="home-btn">
+                    <i class="ri-home-4-fill"></i>
+                </a>
+
+                <!-- ADMIN PROFILE -->
+                <div class="admin-box">
+                    <img src="img/u1.webp" class="admin-img">
+                    <span class="admin-name">Admin</span>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- DONATION STATS -->
+        <div class="vol-stats">
+
+            <div class="vol-card">
+                <i class="ri-wallet-3-fill vol-icon"></i>
+                <h3>Total Donations</h3>
+                <p>₹12,40,000</p>
+            </div>
+
+            <div class="vol-card">
+                <i class="ri-bank-card-line vol-icon"></i>
+                <h3>This Month</h3>
+                <p>₹1,80,000</p>
+            </div>
+
+            <div class="vol-card">
+                <i class="ri-hand-coin-line vol-icon"></i>
+                <h3>New Donors</h3>
+                <p>86</p>
+            </div>
+
+        </div>
+
+        <!-- CHART SECTION -->
+        <section class="charts">
+
+            <!-- CHART 1 -->
+            <div class="chart-area">
+                <h3 class="chart-title">Donations by Area</h3>
+                <canvas id="donationChart1"></canvas>
+            </div>
+
+            <!-- CHART 2 -->
+            <div class="chart-area">
+                <h3 class="chart-title">Monthly Donation Growth</h3>
+                <canvas id="donationChart2"></canvas>
+            </div>
+
+        </section>
+
+        <!-- DONATION TABLE -->
+        <h3 class="table-title">Donors List</h3>
+
+        <table class="vol-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Aravind</td><td>Salem</td><td>₹10,000</td><td>Online</td></tr>
+                <tr><td>Karthika</td><td>Attur</td><td>₹5,500</td><td>Cash</td></tr>
+                <tr><td>Praveen</td><td>Mettur</td><td>₹20,000</td><td>Online</td></tr>
+                <tr><td>Meena</td><td>Omalur</td><td>₹7,200</td><td>Bank Transfer</td></tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</div>
+
+<!-- ================================
+     CHART SCRIPTS
+================================ -->
+
+<script>
+// ----------------------
+//  DONATION CHART 1 (BAR)
+// ----------------------
+const d1 = document.getElementById('donationChart1');
+
+new Chart(d1, {
+    type: 'bar',
+    data: {
+        labels: ['Salem', 'Omalur', 'Attur', 'Mettur', 'Edappadi'],
+        datasets: [{
+            label: 'Donation Amount (₹)',
+            data: [320000, 180000, 220000, 150000, 110000],
+            backgroundColor: '#d34932',
+            borderRadius: 8
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false }},
+        scales: {
+            x: { grid: { display: false }},
+            y: { grid: { color: "#eee" }}
+        }
+    }
+});
+
+// ----------------------
+//  DONATION CHART 2 (LINE)
+// ----------------------
+const d2 = document.getElementById('donationChart2');
+
+new Chart(d2, {
+    type: 'line',
+    data: {
+        labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+        datasets: [{
+            label: 'Monthly Donations (₹)',
+            data: [120000, 140000, 160000, 200000, 220000, 180000],
+            borderColor: '#d34932',
+            backgroundColor: 'rgba(211,73,50,0.2)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false }},
+        scales: {
+            x: { grid: { display: false }},
+            y: { grid: { color: "#eee" }}
+        }
+    }
+});
+</script>
+
+</body>
+</html>

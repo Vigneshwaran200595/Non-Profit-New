@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="about1.css">
+</head>
+<body>
+
+<!-- ▬ TOP BAR ▬ -->
+<div class="top-bar">
+    <div class="top-left">
+        <a href="404_1.html"><i class="fab fa-facebook-f"></i></a>
+        <a href="404_1.html"><i class="fab fa-twitter"></i></a>
+        <a href="404_1.html"><i class="fab fa-pinterest-p"></i></a>
+        <a href="404_1.html"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="top-right">
+        <span><i class="fas fa-location-dot"></i> Salem, Tamilnadu, India.</span>
+        <span><i class="fas fa-envelope"></i> needhelp@company.com</span>
+    </div>
+</div>
+
+<header class="header">
+
+    <div class="header-red">
+
+        <!-- LOGO -->
+        <a href="saas.html">
+    <img src="img/logo1.webp" class="logo" alt="Charity Logo">
+</a>
+
+
+        <!-- TOGGLE BUTTON -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    </div>
+
+   <nav id="mobileNav">
+    <ul>
+
+        <!-- HOME DROPDOWN -->
+      <li class="dropdown">
+
+    <div class="dropdown-header">
+        <a href="saas.html" class="home-main">Home</a>
+
+        <span class="dropdown-toggle">
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+    </div>
+
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home 1</a></li>
+    </ul>
+
+</li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="event1.html">Events</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="contact1.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+    <!-- BLACK BUTTON -->
+    <a href="login1.html" class="header-black-btn">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Create Account</span>
+    </a>
+
+</header>
+
+<section class="inner-banner">
+    <img src="img1/heart.webp" class="float-heart" />
+    <img src="img1/scratch.webp" class="float-scratch" />
+
+    <div class="banner-content wave-scroll">
+        <h1>ABOUT</h1>
+        <div class="breadcrumb">
+            <a href="saas.html">Home</a>
+            <span>›</span>
+            <p>About</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <!-- LEFT IMAGES -->
+    <div class="about-left wave-scroll">
+        <div class="img-top">
+            <img src="img1/child1.webp" class="img1">
+            <img src="img1/child2.webp" class="img2">
+        </div>
+
+      <div class="service-box">
+    <i class="fa-solid fa-hand-holding-heart service-icon"></i>
+    <h2>250+</h2>
+    <p>Services we provide</p>
+</div>
+
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-right wave-scroll">
+
+      <h4 class="sub-title">ABOUT US</h4>
+      <h2 class="title">Unite for a Cause<br>Change the World</h2>
+
+      <!-- TAB BUTTONS -->
+      <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="mission">Our Mission</button>
+          <button class="tab-btn" data-tab="vision">Our Vision</button>
+          <button class="tab-btn" data-tab="goal">Our Goal</button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content-wrapper">
+
+        <p class="tab-content active" id="mission">
+          Our mission is to provide essential support, empower communities,
+          and uplift lives through sustainable development and compassion.
+        </p>
+
+        <p class="tab-content" id="vision">
+          Our vision is to build a world where every individual has equal
+          opportunities, access to education, safety, care, and dignity.
+        </p>
+
+        <p class="tab-content" id="goal">
+          Our goal is to create measurable impact, deliver long-term change,
+          and build strong partnerships that improve global well-being.
+        </p>
+
+        <div class="about-bottom-row">
+
+    <!-- DONATE BUTTON -->
+    <a href="404_1.html" class="donate-btn">
+        DONATE NOW
+        <span class="arrow-circle">
+            <i class="ri-arrow-right-line"></i>
+        </span>
+    </a>
+
+    <!-- SUPPORT INFO -->
+    <div class="help-box">
+        <i class="ri-phone-line help-icon"></i>
+        <div>
+            <p class="help-text">Need help?</p>
+            <h4 class="help-number">+91 1234567890</h4>
+        </div>
+    </div>
+
+</div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="charity-section">
+
+    <div class="charity-header wave-scroll">
+        <h4>CHARITY FUND</h4>
+        <h2>Together We Can<br><span>Make</span> a Difference</h2>
+        <div class="circle-decor"></div>
+    </div>
+
+    <div class="charity-grid">
+
+        <!-- CARD 1 -->
+        <div class="charity-card wave-scroll">
+            <img src="img/c2.webp" class="charity-img">
+
+            <h3>Help For Ecosystem</h3>
+            <p>Charity and Donation is a categorys that involves giving financial</p>
+
+            <div class="fund-row">
+                <div>
+                    <h5>Raised</h5>
+                    <p>40,802$</p>
+                </div>
+                <div>
+                    <h5>Goal</h5>
+                    <p>100,000$</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 45%;"></div>
+            </div>
+
+            <a href="404_1.html" class="donate-card-btn">
+                DONATE NOW 
+                <span class="btn-circle"><i class="ri-arrow-right-line"></i></span>
+            </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="charity-card wave-scroll">
+            <img src="img/c3.webp" class="charity-img">
+
+            <h3>Water For All</h3>
+            <p>Charity and Donation is a categorys that involves giving financial</p>
+
+            <div class="fund-row">
+                <div>
+                    <h5>Raised</h5>
+                    <p>40,802$</p>
+                </div>
+                <div>
+                    <h5>Goal</h5>
+                    <p>100,000$</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+            </div>
+
+            <a href="404_1.html" class="donate-card-btn">
+                DONATE NOW 
+                <span class="btn-circle"><i class="ri-arrow-right-line"></i></span>
+            </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="charity-card wave-scroll">
+            <img src="img/c4.webp" class="charity-img">
+
+            <h3>Vaccine Aid Camp</h3>
+            <p>Charity and Donation is a categorys that involves giving financial</p>
+
+            <div class="fund-row">
+                <div>
+                    <h5>Raised</h5>
+                    <p>40,802$</p>
+                </div>
+                <div>
+                    <h5>Goal</h5>
+                    <p>100,000$</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%;"></div>
+            </div>
+
+            <a href="404_1.html" class="donate-card-btn">
+                DONATE NOW 
+                <span class="btn-circle"><i class="ri-arrow-right-line"></i></span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta-section">
+
+    <div class="cta-container">
+
+        <!-- CARD 1 -->
+        <div class="cta-box cta-orange wave-scroll">
+            <div class="cta-content">
+                <h2>Help Them With Donation</h2>
+                <p>
+                    Support our mission to bring positive change.  
+                    Your contribution helps provide essential care  
+                    and opportunities for those in need.
+                </p>
+
+                <a href="404_1.html" class="cta-btn">
+                    DONATE NOW
+                    <span class="cta-arrow"><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="cta-box cta-green wave-scroll">
+            <div class="cta-content">
+                <h2>Join With Us To Serve As Volunteer</h2>
+                <p>
+                    Be a part of our volunteer community.  
+                    Your time and effort can transform lives  
+                    and create lasting impact.
+                </p>
+
+                <a href="404_1.html" class="cta-btn">
+                    JOIN NOW
+                    <span class="cta-arrow"><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="testimonial-section">
+
+    <div class="testimonial-header wave-scroll">
+        <p class="testimonial-sub">TESTIMONIAL</p>
+        <h2 class="testimonial-title">
+            Hope What They <span>Say</span> About Us
+        </h2>
+    </div>
+
+    <div class="testimonial-grid">
+
+        <!-- CARD 1 -->
+        <div class="testimonial-card wave-scroll">
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="feedback-box">
+                <p>
+                    The charity team provided incredible support to our community.
+                    Their dedication, compassion and
+                    difference. We are grateful for the help that changed many lives.
+                </p>
+            </div>
+
+            <div class="client-info">
+                <img src="img/u1.webp" class="client-img">
+                <div>
+                    <h4>Cameron Williamson</h4>
+                    <span>Medical Assistant</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="testimonial-card wave-scroll">
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="feedback-box">
+                <p>
+                    Thanks to this charity, families in need received food, education,
+                    and essential care.Truly a trusted organization doing meaningful service.
+                </p>
+            </div>
+
+            <div class="client-info">
+                <img src="img/u2.webp" class="client-img">
+                <div>
+                    <h4>Darlene Robertson</h4>
+                    <span>Web Designer</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="testimonial-card wave-scroll">
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="feedback-box">
+                <p>
+                    Their support programs helped vulnerable children receive education
+                    and healthcare. The entire process was smooth and transparent.
+                    I highly recommend supporting their mission.
+                </p>
+            </div>
+
+            <div class="client-info">
+                <img src="img/u3.webp" class="client-img">
+                <div>
+                    <h4>Floyd Miles</h4>
+                    <span>Community Volunteer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col about wave-scroll">
+            <div class="footer-logo">
+                <img src="img/logo1.webp" alt="">
+            </div>
+
+            <p>There are many variations of passages of Lorem Ip available, but the majority have.</p>
+
+          <div class="subscribe-box wave-scroll">
+    <input type="email" id="emailInput" placeholder="Email Address">
+    <button id="subscribeBtn"><i class="ri-send-plane-2-fill"></i></button>
+</div>
+
+<p id="emailError" style="color:red; font-size:13px; margin-top:5px; display:none;"></p>
+
+            <div class="social-icons wave-scroll">
+                <a href="404_1.html"><i class="ri-facebook-fill"></i></a>
+                <a href="404_1.html"><i class="ri-twitter-fill"></i></a>
+                <a href="404_1.html"><i class="ri-pinterest-fill"></i></a>
+                <a href="404_1.html"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col wave-scroll">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="event1.html">Events</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col wave-scroll">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="404_1.html">Donate</a></li>
+                <li><a href="404_1.html">Campaigns</a></li>
+                <li><a href="404_1.html">Fundraise</a></li>
+                <li><a href="404_1.html">Online Service</a></li>
+                <li><a href="404_1.html">Volunteers</a></li>
+                <li><a href="404_1.html">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col contact">
+
+            <div class="contact-box wave-scroll">
+                <div class="arrow"></div>
+                <i class="ri-phone-fill phone-icon"></i>
+                <div>
+                    <h4>+91 1234567890</h4>
+                    <h4>+91 0987654321</h4>
+                </div>
+            </div>
+
+            <div class="contact-item wave-scroll">
+                <i class="ri-earth-fill"></i>
+                <div>
+                    <p>support@example.com</p>
+                    <p>www.website.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item wave-scroll">
+                <i class="ri-map-pin-fill"></i>
+                <div>
+                    <p>Salem, Tamilnadu,</p>
+                    <p>India.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © Copyright 2025 by Stackly.
+    </div>
+</footer>
+
+<script>
+    const emailInput = document.getElementById("emailInput");
+    const subscribeBtn = document.getElementById("subscribeBtn");
+    const emailError = document.getElementById("emailError");
+
+    subscribeBtn.addEventListener("click", function () {
+        const email = emailInput.value.trim();
+
+        // Clear previous error
+        emailError.style.display = "none";
+        emailInput.style.borderColor = "#ccc";
+
+        // Check empty
+        if (email === "") {
+            emailError.innerText = "Please fill the field";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailError.innerText = "Please enter a valid email address";
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "red";
+            return;
+        }
+
+        // Success → Redirect to 404 page
+        window.location.href = "404_1.html";
+    });
+</script>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("mobileNav").classList.toggle("active");
+}
+
+document.querySelectorAll(".dropdown-toggle").forEach(btn=>{
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        const parent = this.closest(".dropdown");
+        parent.classList.toggle("open");
+    });
+});
+</script>
+
+<script>
+const waveElements = document.querySelectorAll('.wave-scroll');
+
+function animateWave() {
+    waveElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', animateWave);
+window.addEventListener('load', animateWave);
+</script>
+
+</body>
+</html>
+
+
+
