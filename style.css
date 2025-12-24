@@ -723,12 +723,15 @@ body {
   }
 
   /* Slides must NOT overflow */
-  .hero-slide {
-    inset: 0;
-    width: 100%;
-    transform: translateX(0) !important;
-    background-position: center center;
-  }
+.hero-slide {
+  inset: 0;
+  width: 100%;
+  transform: translateX(0) !important;
+  background-position: 70% 50%; /* exact center */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
   /* REMOVE desktop white gradient */
   .overlay-white {
@@ -743,7 +746,7 @@ body {
   /* CENTER content properly */
   .hero-content {
     left: 50% !important;
-    top: 50% !important;
+    top: 40% !important;
     transform: translate(-50%, -50%) !important;
     width: 90%;
     max-width: 420px;
